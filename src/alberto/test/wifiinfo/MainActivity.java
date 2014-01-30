@@ -21,8 +21,10 @@ public class MainActivity extends Activity {
 
         
         // Check if WiFi is connected
-        ConnectivityManager connManager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
-        NetworkInfo wifiStatus = connManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
+        ConnectivityManager connManager = 
+                (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
+        NetworkInfo wifiStatus = 
+                connManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
 
         if ( !wifiStatus.isConnected() ) {
             Toast.makeText(getApplicationContext(), 
@@ -64,7 +66,8 @@ public class MainActivity extends Activity {
         txtDNS2.setText(intToIp(wm.getDhcpInfo().dns2));
         txtGateway.setText(intToIp(wm.getDhcpInfo().gateway));
         txtNetmask.setText(intToIp(wm.getDhcpInfo().netmask));
-        txtLease.setText(String.valueOf(wm.getDhcpInfo().leaseDuration / 60 / 60 ) + "h.");
+        txtLease.setText(String.valueOf(
+                wm.getDhcpInfo().leaseDuration / 60 / 60 ) + "h.");
     }
 
 
