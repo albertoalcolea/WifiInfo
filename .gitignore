@@ -1,1 +1,8 @@
+# Classes and compilated files
 bin
+
+# Eclipse files
+.settings
+.classpath
+.project
+
