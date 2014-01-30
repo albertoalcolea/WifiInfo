@@ -5,16 +5,16 @@
     <string name="action_settings">Configuración</string>
     <string name="ip_string">Dirección IP</string>
     <string name="mac_string">Dirección MAC</string>
-	<string name="bssid_string">BSSID</string>
-	<string name="ssid_string">SSID</string>
-	<string name="hidden_ssid_string">Visibilidad SSID</string>
-	<string name="hidden_string">oculto</string>
-	<string name="visible_string">visible</string>
-	<string name="dns1_string">DNS 1</string>
-	<string name="dns2_string">DNS 2</string>
-	<string name="gateway_string">Gateway</string>
-	<string name="netmask_string">Netmask</string>
-	<string name="dhcp_server_string">Servidor DHCP</string>
-	<string name="lease_duration_string">Duración</string>
-    
+    <string name="bssid_string">BSSID</string>
+    <string name="ssid_string">SSID</string>
+    <string name="hidden_ssid_string">Visibilidad SSID</string>
+    <string name="hidden_string">oculto</string>
+    <string name="visible_string">visible</string>
+    <string name="dns1_string">DNS 1</string>
+    <string name="dns2_string">DNS 2</string>
+    <string name="gateway_string">Gateway</string>
+    <string name="netmask_string">Netmask</string>
+    <string name="dhcp_server_string">Servidor DHCP</string>
+    <string name="lease_duration_string">Duración</string>
+
 </resources>

@@ -6,217 +6,217 @@
 
     <TableLayout
         android:layout_width="fill_parent"
-	    android:layout_height="wrap_content"
-	    android:layout_margin="20dp" >
-        
-	    <TableRow android:id="@+id/TableRowIP">
-	        <TextView
-		        android:id="@+id/lblIP"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="20dp"
-		        android:layout_marginRight="20dp"
-		        android:text="@string/ip_string"
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-	        
-		    <TextView
-		        android:id="@+id/txtIP"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="20dp"
-		        android:text=""
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-		</TableRow>
-		
-	    <TableRow android:id="@+id/TableRowMAC">
-	        <TextView
-		        android:id="@+id/lblMAC"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="20dp"
-		        android:layout_marginRight="20dp"
-		        android:text="@string/mac_string"
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-	        
-		    <TextView
-		        android:id="@+id/txtMAC"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="20dp"
-		        android:text=""
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-	    </TableRow>
-	    
-	    
-	    <TableRow android:id="@+id/TableRowSSID">
-	        <TextView
-		        android:id="@+id/lblSSID"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="20dp"
-		        android:layout_marginRight="20dp"
-		        android:text="@string/ssid_string"
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-	        
-		    <TextView
-		        android:id="@+id/txtSSID"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="20dp"
-		        android:text=""
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-	    </TableRow>
-	    
-	    <TableRow android:id="@+id/TableRowHiddenSSID">
-	        <TextView
-		        android:id="@+id/lblHiddenSSID"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="20dp"
-		        android:layout_marginRight="20dp"
-		        android:text="@string/hidden_ssid_string"
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-	        
-		    <TextView
-		        android:id="@+id/txtHiddenSSID"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="20dp"
-		        android:text=""
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-		</TableRow>
-		
-	    <TableRow android:id="@+id/TableRowBSSID">
-	        <TextView
-		        android:id="@+id/lblBSSID"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="20dp"
-		        android:layout_marginRight="20dp"
-		        android:text="@string/bssid_string"
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-	        
-		    <TextView
-		        android:id="@+id/txtBSSID"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="20dp"
-		        android:text=""
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-	    </TableRow>
-		
-	    <TableRow android:id="@+id/TableRowDHCPServer">
-	        <TextView
-		        android:id="@+id/lblDHCPServer"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="20dp"
-		        android:layout_marginRight="20dp"
-		        android:text="@string/dhcp_server_string"
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-	        
-		    <TextView
-		        android:id="@+id/txtDHCPServer"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="20dp"
-		        android:text=""
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-	    </TableRow>
-		
-	    <TableRow android:id="@+id/TableRowDNS1">
-	        <TextView
-		        android:id="@+id/lblDNS1"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="20dp"
-		        android:layout_marginRight="20dp"
-		        android:text="@string/dns1_string"
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-	        
-		    <TextView
-		        android:id="@+id/txtDNS1"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="20dp"
-		        android:text=""
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-	    </TableRow>
-	    
-	    <TableRow android:id="@+id/TableRowDNS2">
-	        <TextView
-		        android:id="@+id/lblDNS2"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="20dp"
-		        android:layout_marginRight="20dp"
-		        android:text="@string/dns2_string"
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-	        
-		    <TextView
-		        android:id="@+id/txtDNS2"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="20dp"
-		        android:text=""
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-	    </TableRow>
-	    
-	    <TableRow android:id="@+id/TableRowGateway">
-	        <TextView
-		        android:id="@+id/lblGateway"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="20dp"
-		        android:layout_marginRight="20dp"
-		        android:text="@string/gateway_string"
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-	        
-		    <TextView
-		        android:id="@+id/txtGateway"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="20dp"
-		        android:text=""
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-	    </TableRow>
-	    
-	    <TableRow android:id="@+id/TableRowNetmask">
-	        <TextView
-		        android:id="@+id/lblNetmask"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="20dp"
-		        android:layout_marginRight="20dp"
-		        android:text="@string/netmask_string"
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-	        
-		    <TextView
-		        android:id="@+id/txtNetmask"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="20dp"
-		        android:text=""
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-	    </TableRow>
-	    
-	    <TableRow android:id="@+id/TableRowLeaseDuration">
-	        <TextView
-		        android:id="@+id/lblLease"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="20dp"
-		        android:layout_marginRight="20dp"
-		        android:text="@string/lease_duration_string"
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-	        
-		    <TextView
-		        android:id="@+id/txtLease"
-		        android:layout_width="wrap_content"
-		        android:layout_height="wrap_content"
-		        android:layout_marginBottom="20dp"
-		        android:text=""
-		        android:textAppearance="?android:attr/textAppearanceMedium" />
-	    </TableRow>
-	</TableLayout>
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp" >
+
+        <TableRow android:id="@+id/TableRowIP">
+            <TextView
+                android:id="@+id/lblIP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/ip_string"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtIP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow android:id="@+id/TableRowMAC">
+            <TextView
+                android:id="@+id/lblMAC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/mac_string"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtMAC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow android:id="@+id/TableRowSSID">
+            <TextView
+                android:id="@+id/lblSSID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/ssid_string"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtSSID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow android:id="@+id/TableRowHiddenSSID">
+            <TextView
+                android:id="@+id/lblHiddenSSID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/hidden_ssid_string"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtHiddenSSID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow android:id="@+id/TableRowBSSID">
+            <TextView
+                android:id="@+id/lblBSSID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/bssid_string"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtBSSID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow android:id="@+id/TableRowDHCPServer">
+            <TextView
+                android:id="@+id/lblDHCPServer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/dhcp_server_string"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtDHCPServer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow android:id="@+id/TableRowDNS1">
+            <TextView
+                android:id="@+id/lblDNS1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/dns1_string"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtDNS1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow android:id="@+id/TableRowDNS2">
+            <TextView
+                android:id="@+id/lblDNS2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/dns2_string"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtDNS2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow android:id="@+id/TableRowGateway">
+            <TextView
+                android:id="@+id/lblGateway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/gateway_string"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtGateway"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow android:id="@+id/TableRowNetmask">
+            <TextView
+                android:id="@+id/lblNetmask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/netmask_string"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtNetmask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+
+        <TableRow android:id="@+id/TableRowLeaseDuration">
+            <TextView
+                android:id="@+id/lblLease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/lease_duration_string"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtLease"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+    </TableLayout>
+
 </ScrollView>
