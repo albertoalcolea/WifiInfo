@@ -14,7 +14,7 @@
 	<string name="dns2_string">DNS 2</string>
 	<string name="gateway_string">Gateway</string>
 	<string name="netmask_string">Netmask</string>
-	<string name="dhcp_server_string">DHCP Server</string>
+	<string name="dhcp_server_string">Servidor DHCP</string>
 	<string name="lease_duration_string">Duración</string>
     
 </resources>
