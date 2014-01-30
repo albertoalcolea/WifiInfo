@@ -3,6 +3,9 @@
 
     <string name="app_name">WifiInfo</string>
     <string name="action_settings">Settings</string>
+    
+    <string name="connection_string">Not connected to a WiFi network</string>
+    
     <string name="ip_string">IP Address</string>
     <string name="mac_string">MAC Address</string>
     <string name="bssid_string">BSSID</string>

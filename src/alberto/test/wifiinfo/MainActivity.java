@@ -2,9 +2,12 @@ package alberto.test.wifiinfo;
 
 import java.nio.ByteOrder;
 
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.wifi.WifiManager;
 import android.os.Bundle;
 import android.widget.TextView;
+import android.widget.Toast;
 import android.app.Activity;
 import android.content.Context;
 
@@ -16,7 +19,19 @@ public class MainActivity extends Activity {
 
         setContentView(R.layout.activity_main);
 
+        
+        // Check if WiFi is connected
+        ConnectivityManager connManager = (ConnectivityManager) getSystemService(CONNECTIVITY_SERVICE);
+        NetworkInfo wifiStatus = connManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
 
+        if ( !wifiStatus.isConnected() ) {
+            Toast.makeText(getApplicationContext(), 
+                    R.string.connection_string, Toast.LENGTH_LONG).show();
+            finish();
+        }
+           
+        
+        // Fields
         TextView txtIP  		= (TextView) findViewById(R.id.txtIP);
         TextView txtMAC 		= (TextView) findViewById(R.id.txtMAC);
         TextView txtBSSID 		= (TextView) findViewById(R.id.txtBSSID);
