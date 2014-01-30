@@ -39,9 +39,9 @@ public class MainActivity extends Activity {
 		txtBSSID.setText(wm.getConnectionInfo().getBSSID());
 		txtSSID.setText(wm.getConnectionInfo().getSSID());
 		if (wm.getConnectionInfo().getHiddenSSID()) {
-			txtHiddenSSID.setText("oculto");
+			txtHiddenSSID.setText(R.string.hidden_string);
 		} else {
-			txtHiddenSSID.setText("visible");
+			txtHiddenSSID.setText(R.string.visible_string);
 		}
 		
 		// DHCP Info
