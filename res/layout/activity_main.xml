@@ -9,6 +9,17 @@
         android:layout_height="wrap_content"
         android:layout_margin="20dp" >
 
+		<TableRow>
+
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:text="@string/device_information"
+			    android:textSize="15sp" >
+			</TextView>
+</TableRow>
+        
         <TableRow android:id="@+id/TableRowIP">
             <TextView
                 android:id="@+id/lblIP"
@@ -25,6 +36,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:text=""
+            	android:layout_weight="1.0"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
 
@@ -44,9 +56,21 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:text=""
+            	android:layout_weight="1.0"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
 
+        <TableRow>
+
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:text="@string/access_point_information"
+			    android:textSize="15sp" />
+
+		</TableRow>
+        
         <TableRow android:id="@+id/TableRowSSID">
             <TextView
                 android:id="@+id/lblSSID"
@@ -63,6 +87,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:text=""
+            	android:layout_weight="1.0"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
 
@@ -82,6 +107,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:text=""
+            	android:layout_weight="1.0"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
 
@@ -101,9 +127,21 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:text=""
+            	android:layout_weight="1.0"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
 
+        <TableRow>
+
+			<TextView
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="1"
+			    android:text="@string/network_information"
+			    android:textSize="15sp" />
+
+		</TableRow>
+        
         <TableRow android:id="@+id/TableRowDHCPServer">
             <TextView
                 android:id="@+id/lblDHCPServer"
@@ -120,6 +158,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:text=""
+            	android:layout_weight="1.0"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
 
@@ -139,6 +178,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:text=""
+            	android:layout_weight="1.0"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
 
@@ -158,6 +198,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:text=""
+            	android:layout_weight="1.0"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
 
@@ -177,6 +218,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:text=""
+            	android:layout_weight="1.0"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
 
@@ -196,6 +238,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:text=""
+            	android:layout_weight="1.0"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
 
@@ -215,6 +258,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
                 android:text=""
+            	android:layout_weight="1.0"
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
     </TableLayout>

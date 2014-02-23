@@ -20,4 +20,8 @@
     <string name="dhcp_server_string">Servidor DHCP</string>
     <string name="lease_duration_string">Duración</string>
 
+    <string name="device_information">Información del dispositivo</string>
+    <string name="access_point_information">Información del punto de acceso</string>
+    <string name="network_information">Información de la red</string>
+    
 </resources>
