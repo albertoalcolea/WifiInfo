@@ -54,10 +54,16 @@ public class ChannelActivity extends Activity {
 		    
 		    table.addView(row);
 		}
-		
+	}
+	
+	
+	@Override
+	public void onResume() {
+		super.onResume();
 		setInfo();
 		//setMockupInfo();
 	}
+	
 	
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -98,9 +104,20 @@ public class ChannelActivity extends Activity {
 	
 	
 	private void setMockupInfo() {
-		for (int i=1; i<=14; i++) {
-		    progressBars.get(i-1).setProgress((int)(Math.random()*100));
-		}
+		progressBars.get(0).setProgress(25);
+		progressBars.get(1).setProgress(13);
+		progressBars.get(2).setProgress(21);
+		progressBars.get(3).setProgress(26);
+		progressBars.get(4).setProgress(50);
+		progressBars.get(5).setProgress(98);
+		progressBars.get(6).setProgress(35);
+		progressBars.get(7).setProgress(62);
+		progressBars.get(8).setProgress(30);
+		progressBars.get(9).setProgress(67);
+		progressBars.get(10).setProgress(43);
+		progressBars.get(11).setProgress(42);
+		progressBars.get(12).setProgress(34);
+		progressBars.get(13).setProgress(85);
 		String bestChannels = "2, 3, 1, 4...";
 		txtBestChannels.setText(
 				getText(R.string.best_channels_string) + ": " + bestChannels + "...");

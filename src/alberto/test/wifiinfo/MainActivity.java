@@ -34,9 +34,15 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setInfo();
-        //setMockupInfo();
     }
+	
+	
+	@Override
+	public void onResume() {
+		super.onResume();
+		setInfo();
+        //setMockupInfo();
+	}
 	
 	
 	@Override
@@ -174,7 +180,7 @@ public class MainActivity extends Activity {
         txtRSSI.setText("-74 dBm");
         txtLevel.setText("-84 dBm");
         txtEncryption.setText("[WPA2-PSK-CCMP]");
-        txtChannel.setText("2");
+        txtChannel.setText("11");
         txtFrecuency.setText("2462");
         txtDHCPServer.setText("192.168.0.2");
         txtDNS1.setText("52.128.98.1");
