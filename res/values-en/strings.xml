@@ -13,6 +13,11 @@
     <string name="hidden_ssid_string">SSID Visibility</string>
     <string name="hidden_string">hidden</string>
     <string name="visible_string">visible</string>
+    <string name="link_speed_string">Link speed</string>
+    <string name="rssi_string">RSSI</string>
+    <string name="encryption_string">Encryption</string>
+    <string name="frecuency_string">Frecuency</string>
+    <string name="level_string">Signal strength</string>
     <string name="dns1_string">DNS 1</string>
     <string name="dns2_string">DNS 2</string>
     <string name="gateway_string">Gateway</string>
@@ -23,5 +28,7 @@
     <string name="device_information">Device information</string>
     <string name="access_point_information">Access point information</string>
     <string name="network_information">Network information</string>
+    
+    <string name="refresh_string">Refresh</string>
 
 </resources>
