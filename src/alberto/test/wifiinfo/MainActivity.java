@@ -14,11 +14,20 @@ import android.widget.TextView;
 import android.widget.Toast;
 import android.app.Activity;
 import android.content.Context;
+import android.content.Intent;
 
 public class MainActivity extends Activity {
 
+	// Result code
+	private static final int CLOSE_ALL_ACTIVITIES = 900;
+	
+	// Activities code
+	private static final int CHANNEL_ACTIVITY = 1000;
+	
+	
 	// IDs for menu items
 	private static final int MENU_REFRESH = Menu.FIRST;
+	private static final int MENU_CHANNEL = Menu.FIRST + 1;
 	
 	
 	@Override
@@ -35,6 +44,7 @@ public class MainActivity extends Activity {
 		super.onCreateOptionsMenu(menu);
 
 		menu.add(Menu.NONE, MENU_REFRESH, Menu.NONE, R.string.refresh_string);
+		menu.add(Menu.NONE, MENU_CHANNEL, Menu.NONE, R.string.channels_string);
 		return true;
 	}
 
@@ -45,9 +55,25 @@ public class MainActivity extends Activity {
 		case MENU_REFRESH:
 			setInfo();
 			return true;
+		case MENU_CHANNEL:
+			Intent i = new Intent(getApplicationContext(), ChannelActivity.class);
+			startActivityForResult(i, CHANNEL_ACTIVITY);
+			return true;
 		default:
 			return super.onOptionsItemSelected(item);
 		}
+	}
+	
+	
+	@Override
+	public void onActivityResult(int requestCode, int resultCode, Intent data) {
+	    switch (resultCode) {
+	        case CLOSE_ALL_ACTIVITIES:
+				setResult(CLOSE_ALL_ACTIVITIES);
+				finish();
+				break;
+	    }
+	    super.onActivityResult(requestCode, resultCode, data);
 	}
 
 	
@@ -74,6 +100,7 @@ public class MainActivity extends Activity {
 	        TextView txtRSSI	    = (TextView) findViewById(R.id.txtRSSI);
 	        TextView txtLevel		= (TextView) findViewById(R.id.txtLevel);
 	        TextView txtEncryption  = (TextView) findViewById(R.id.txtEncryption);
+	        TextView txtChannel		= (TextView) findViewById(R.id.txtChannel);
 	        TextView txtFrecuency	= (TextView) findViewById(R.id.txtFrecuency);
 	        TextView txtDHCPServer	= (TextView) findViewById(R.id.txtDHCPServer);
 	        TextView txtDNS1		= (TextView) findViewById(R.id.txtDNS1);
@@ -103,6 +130,7 @@ public class MainActivity extends Activity {
 	        ScanResult network = getScanResult(wm, wm.getConnectionInfo().getBSSID());
 	        txtLevel.setText(network.level + " dBm");
 	        txtEncryption.setText(network.capabilities);
+	        txtChannel.setText(String.valueOf(ChannelExtractor.getChannelFromFrequency(network.frequency)));
 	        txtFrecuency.setText(network.frequency + " MHz");
 	
 	        // DHCP Info
@@ -128,6 +156,7 @@ public class MainActivity extends Activity {
         TextView txtRSSI	    = (TextView) findViewById(R.id.txtRSSI);
         TextView txtLevel		= (TextView) findViewById(R.id.txtLevel);
         TextView txtEncryption	= (TextView) findViewById(R.id.txtEncryption);
+        TextView txtChannel		= (TextView) findViewById(R.id.txtChannel);
         TextView txtFrecuency	= (TextView) findViewById(R.id.txtFrecuency);
         TextView txtDHCPServer	= (TextView) findViewById(R.id.txtDHCPServer);
         TextView txtDNS1		= (TextView) findViewById(R.id.txtDNS1);
@@ -145,6 +174,7 @@ public class MainActivity extends Activity {
         txtRSSI.setText("-74 dBm");
         txtLevel.setText("-84 dBm");
         txtEncryption.setText("[WPA2-PSK-CCMP]");
+        txtChannel.setText("2");
         txtFrecuency.setText("2462");
         txtDHCPServer.setText("192.168.0.2");
         txtDNS1.setText("52.128.98.1");

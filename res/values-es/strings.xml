@@ -29,6 +29,12 @@
     <string name="access_point_information">Información del punto de acceso</string>
     <string name="network_information">Información de la red</string>
     
+    <string name="channel_title_string">Ocupación de canales</string>
+    <string name="channel_string">Canal</string>
+    <string name="best_channels_string">Mejores canales</string>
+    
     <string name="refresh_string">Actualizar</string>
+    <string name="channels_string">Canales</string>
+    <string name="info_string">Info</string>
     
 </resources>

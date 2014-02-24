@@ -1,0 +1,36 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ChannelActivity" >
+
+    <TableLayout
+        android:id="@+id/table_channel"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp" >
+
+		<LinearLayout 
+		    android:id="@+id/ChannelTitle"
+		    android:orientation="vertical">
+			<TextView
+			    android:id="@+id/lblChannelTitle"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:text="@string/channel_title_string"
+			    android:textSize="15sp" >
+			</TextView>
+			<TextView
+			    android:id="@+id/txtBestChannels"
+			    android:layout_width="fill_parent"
+			    android:layout_height="wrap_content"
+			    android:gravity="right"
+			    android:textStyle="italic"
+			    android:layout_marginBottom="10dp"
+			    android:text=""
+			    android:textAppearance="?android:attr/textAppearanceSmall" >
+			</TextView>
+		</LinearLayout>
+    </TableLayout>
+
+</ScrollView>

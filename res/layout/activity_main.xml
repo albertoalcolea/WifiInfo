@@ -201,6 +201,25 @@
                 android:textAppearance="?android:attr/textAppearanceMedium" />
         </TableRow>
         
+        <TableRow android:id="@+id/TableRowChannel">
+            <TextView
+                android:id="@+id/lblChannel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginBottom="20dp"
+                android:text="@string/channel_string"
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView
+                android:id="@+id/txtChannel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:text=""
+                android:textAppearance="?android:attr/textAppearanceMedium" />
+        </TableRow>
+        
         <TableRow android:id="@+id/TableRowFrecuency">
             <TextView
                 android:id="@+id/lblFrecuency"

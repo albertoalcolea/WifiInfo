@@ -29,6 +29,12 @@
     <string name="access_point_information">Access point information</string>
     <string name="network_information">Network information</string>
     
+    <string name="channel_title_string">Channel occupancy</string>
+    <string name="channel_string">Channel</string>
+    <string name="best_channels_string">Best channels</string>
+    
     <string name="refresh_string">Refresh</string>
+    <string name="channels_string">Channels</string>
+    <string name="info_string">Info</string>
 
 </resources>
