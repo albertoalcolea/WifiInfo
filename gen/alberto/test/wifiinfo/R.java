@@ -28,6 +28,9 @@ public final class R {
         public static final int GroupAccessPointInformation=0x7f080008;
         public static final int GroupDeviceInformation=0x7f080000;
         public static final int GroupNetworkInformation=0x7f080025;
+        public static final int LinearLayout1=0x7f08003f;
+        public static final int LinearLayout2=0x7f080040;
+        public static final int RelativeLayoutNetwork=0x7f08003e;
         public static final int TableRowBSSID=0x7f080010;
         public static final int TableRowChannel=0x7f08001f;
         public static final int TableRowDHCPServer=0x7f080027;
@@ -45,7 +48,7 @@ public final class R {
         public static final int TableRowNetmask=0x7f080033;
         public static final int TableRowRSSI=0x7f080016;
         public static final int TableRowSSID=0x7f08000a;
-        public static final int action_settings=0x7f08003e;
+        public static final int action_settings=0x7f080041;
         public static final int lblBSSID=0x7f080011;
         public static final int lblChannel=0x7f080020;
         public static final int lblChannelTitle=0x7f08003b;
@@ -92,6 +95,8 @@ public final class R {
         public static final int activity_main=0x7f030000;
         public static final int channel=0x7f030001;
         public static final int channel_row=0x7f030002;
+        public static final int disconnected=0x7f030003;
+        public static final int network=0x7f030004;
     }
     public static final class menu {
         public static final int main=0x7f070000;
@@ -108,6 +113,7 @@ public final class R {
         public static final int connection_string=0x7f050002;
         public static final int device_information=0x7f050015;
         public static final int dhcp_server_string=0x7f050013;
+        public static final int disconnected_string=0x7f05001f;
         public static final int dns1_string=0x7f05000f;
         public static final int dns2_string=0x7f050010;
         public static final int encryption_string=0x7f05000c;
@@ -123,6 +129,7 @@ public final class R {
         public static final int mac_string=0x7f050004;
         public static final int netmask_string=0x7f050012;
         public static final int network_information=0x7f050017;
+        public static final int networks_string=0x7f05001e;
         public static final int refresh_string=0x7f05001b;
         public static final int rssi_string=0x7f05000b;
         public static final int ssid_string=0x7f050006;

@@ -4,7 +4,7 @@
     <string name="app_name">WifiInfo</string>
     <string name="action_settings">Configuración</string>
     
-    <string name="connection_string">No conectado a una red WiFi</string>
+    <string name="connection_string">WiFi está desactivado</string>
     
     <string name="ip_string">Dirección IP</string>
     <string name="mac_string">Dirección MAC</string>
@@ -36,5 +36,8 @@
     <string name="refresh_string">Actualizar</string>
     <string name="channels_string">Canales</string>
     <string name="info_string">Info</string>
+    <string name="networks_string">Redes</string>
+    
+    <string name="disconnected_string">No conectado a una red WiFi.</string>
     
 </resources>

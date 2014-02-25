@@ -42,14 +42,9 @@ public class ChannelUsage {
 		TreeMap<Integer, Integer> sorted = (TreeMap<Integer, Integer>) sortByValues(usage);
 		LinkedList<Integer> listSorted = new LinkedList<Integer>(sorted.keySet());
 		
-		System.out.println(sorted.toString());
-		
 		String bestChannels = "";
 		for (int i=0; i<num; i++) {
-			bestChannels = bestChannels + listSorted.removeFirst();
-			if (i < num) {
-				bestChannels = bestChannels + ", ";
-			}
+			bestChannels = bestChannels + listSorted.removeFirst() + ", ";
 		}
 		
 		return bestChannels;

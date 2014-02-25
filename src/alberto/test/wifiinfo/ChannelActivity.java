@@ -60,8 +60,11 @@ public class ChannelActivity extends Activity {
 	@Override
 	public void onResume() {
 		super.onResume();
-		setInfo();
-		//setMockupInfo();
+		if (Constants.USE_MOCKUPS) {
+			setMockupInfo();
+		} else {
+			setInfo();
+		}
 	}
 	
 	
@@ -118,7 +121,7 @@ public class ChannelActivity extends Activity {
 		progressBars.get(11).setProgress(42);
 		progressBars.get(12).setProgress(34);
 		progressBars.get(13).setProgress(85);
-		String bestChannels = "2, 3, 1, 4...";
+		String bestChannels = "2, 3, 1, 4, ";
 		txtBestChannels.setText(
 				getText(R.string.best_channels_string) + ": " + bestChannels + "...");
 	}
@@ -133,7 +136,7 @@ public class ChannelActivity extends Activity {
         NetworkInfo wifiStatus = 
                 connManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
 
-        if ( !wifiStatus.isConnected() ) {
+        if ( !wifiStatus.isAvailable() ) {
             Toast.makeText(getApplicationContext(), 
                     R.string.connection_string, Toast.LENGTH_LONG).show();
             setResult(CLOSE_ALL_ACTIVITIES);

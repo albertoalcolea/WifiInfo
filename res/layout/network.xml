@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayoutNetwork"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:padding="5dp" >
+
+	<TextView
+        android:id="@+id/txtSSID"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="WLAN"
+        android:textAppearance="?android:attr/textAppearanceMedium" >
+    </TextView>
+    
+    <LinearLayout 
+        android:id="@+id/LinearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="25dp" >
+        <TextView
+	        android:id="@+id/txtBSSID"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="00:11:00:11:00:11"
+	        android:layout_weight="1" >
+	    </TextView>
+	    
+        <TextView
+	        android:id="@+id/txtLevel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="right"
+	        android:text="Nivel de señal: -78 dBm" >
+	    </TextView>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/LinearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" 
+        android:layout_below="@+id/LinearLayout1" >
+    	<TextView
+	        android:id="@+id/txtEncryption"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:text="[WPA2 PSK]"
+	        android:layout_weight="1" >
+	    </TextView>
+    
+    	<TextView
+	        android:id="@+id/txtChannel"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="right"
+	        android:text="Channel 3" >
+	    </TextView>
+    </LinearLayout>
+</RelativeLayout>

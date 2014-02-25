@@ -22,12 +22,14 @@ public class MainActivity extends Activity {
 	private static final int CLOSE_ALL_ACTIVITIES = 900;
 	
 	// Activities code
-	private static final int CHANNEL_ACTIVITY = 1000;
+	private static final int CHANNEL_ACTIVITY 	= 1000;
+	private static final int NETWORKS_ACTIVITY 	= 1001;
 	
 	
 	// IDs for menu items
 	private static final int MENU_REFRESH = Menu.FIRST;
 	private static final int MENU_CHANNEL = Menu.FIRST + 1;
+	private static final int MENU_NETWORKS = Menu.FIRST + 2;
 	
 	
 	@Override
@@ -40,8 +42,11 @@ public class MainActivity extends Activity {
 	@Override
 	public void onResume() {
 		super.onResume();
-		setInfo();
-        //setMockupInfo();
+		if (Constants.USE_MOCKUPS) {
+			setMockupInfo();
+		} else {
+			setInfo();
+		}
 	}
 	
 	
@@ -51,19 +56,25 @@ public class MainActivity extends Activity {
 
 		menu.add(Menu.NONE, MENU_REFRESH, Menu.NONE, R.string.refresh_string);
 		menu.add(Menu.NONE, MENU_CHANNEL, Menu.NONE, R.string.channels_string);
+		menu.add(Menu.NONE, MENU_NETWORKS, Menu.NONE, R.string.networks_string);
 		return true;
 	}
 
 	
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
+		Intent i;
 		switch (item.getItemId()) {
 		case MENU_REFRESH:
 			setInfo();
 			return true;
 		case MENU_CHANNEL:
-			Intent i = new Intent(getApplicationContext(), ChannelActivity.class);
+			i = new Intent(getApplicationContext(), ChannelActivity.class);
 			startActivityForResult(i, CHANNEL_ACTIVITY);
+			return true;
+		case MENU_NETWORKS:
+			i = new Intent(getApplicationContext(), NetworksActivity.class);
+			startActivityForResult(i, NETWORKS_ACTIVITY);
 			return true;
 		default:
 			return super.onOptionsItemSelected(item);
@@ -90,12 +101,13 @@ public class MainActivity extends Activity {
         NetworkInfo wifiStatus = 
                 connManager.getNetworkInfo(ConnectivityManager.TYPE_WIFI);
 
-        if ( !wifiStatus.isConnected() ) {
+        if ( !wifiStatus.isAvailable() ) {
             Toast.makeText(getApplicationContext(), 
                     R.string.connection_string, Toast.LENGTH_LONG).show();
             finish();
+        } else if ( !wifiStatus.isConnected() ) {
+        	this.setContentView(R.layout.disconnected);
         } else {
-           
 	        // Fields
 	        TextView txtIP  		= (TextView) findViewById(R.id.txtIP);
 	        TextView txtMAC 		= (TextView) findViewById(R.id.txtMAC);
