@@ -1,5 +1,6 @@
 package alberto.test.wifiinfo;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import android.app.ListActivity;
@@ -29,7 +30,12 @@ public class NetworksActivity extends ListActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		mAdapter = new NetworksAdapter(this, getNetworks());		
+		if (Constants.USE_MOCKUPS) {
+			List<ScanResult> networks = new ArrayList<ScanResult>(); 
+			mAdapter = new NetworksAdapter(this, networks);
+		} else {
+			mAdapter = new NetworksAdapter(this, getNetworks());
+		}
 		getListView().setAdapter(mAdapter);
 	}
 	
@@ -38,7 +44,7 @@ public class NetworksActivity extends ListActivity {
 	public void onResume() {
 		super.onResume();
 		if (Constants.USE_MOCKUPS) {
-			//setMockupInfo();
+			setMockupInfo();
 		} else {
 			setInfo();
 		}
@@ -72,6 +78,12 @@ public class NetworksActivity extends ListActivity {
 	
 	private void setInfo() {
 		mAdapter.update(getNetworks());
+	}
+	
+	
+	private void setMockupInfo() {
+		List<ScanResult> networks = new ArrayList<ScanResult>();
+		mAdapter.update(networks);
 	}
 	
 	

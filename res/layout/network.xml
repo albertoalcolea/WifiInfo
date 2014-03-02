@@ -10,7 +10,6 @@
         android:id="@+id/txtSSID"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="WLAN"
         android:textAppearance="?android:attr/textAppearanceMedium" >
     </TextView>
     
@@ -24,7 +23,6 @@
 	        android:id="@+id/txtBSSID"
 	        android:layout_width="fill_parent"
 	        android:layout_height="wrap_content"
-	        android:text="00:11:00:11:00:11"
 	        android:layout_weight="1" >
 	    </TextView>
 	    
@@ -32,8 +30,7 @@
 	        android:id="@+id/txtLevel"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_gravity="right"
-	        android:text="Nivel de señal: -78 dBm" >
+	        android:layout_gravity="right" >
 	    </TextView>
     </LinearLayout>
     
@@ -47,7 +44,6 @@
 	        android:id="@+id/txtEncryption"
 	        android:layout_width="fill_parent"
 	        android:layout_height="wrap_content"
-	        android:text="[WPA2 PSK]"
 	        android:layout_weight="1" >
 	    </TextView>
     
@@ -55,8 +51,7 @@
 	        android:id="@+id/txtChannel"
 	        android:layout_width="wrap_content"
 	        android:layout_height="wrap_content"
-	        android:layout_gravity="right"
-	        android:text="Channel 3" >
+	        android:layout_gravity="right" >
 	    </TextView>
     </LinearLayout>
 </RelativeLayout>
